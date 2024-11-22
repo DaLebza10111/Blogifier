@@ -27,7 +27,7 @@ public class HomeController(
     }
     catch (BlogNotIitializeException ex)
     {
-      _logger.LogError(ex, "blgo not iitialize redirect");
+      _logger.LogError(ex, "blog not initialize redirect");
       return Redirect("~/account/initialize");
     }
     var pager = await _postProvider.GetPostsAsync(page, main.ItemsPerPage);
